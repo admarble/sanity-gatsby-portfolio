@@ -2,29 +2,16 @@
   display: block;
   color: inherit;
   text-decoration: none;
-  border: 1px #DEDEDE solid;
-  &:hover {
-    background: #0000FF;
-    color: #ffffff;
-  }
 }
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
-  /* display: none; */
-  -webkit-transform: rotate(90deg);
-  transform-origin: 92% 20%;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 6px;
 }
 
 .leadMediaThumb {
   position: relative;
   padding-bottom: 66.666%;
   background: #eee;
-  padding: 40% 0;
-  margin: 20%;
 
   @nest & img {
     position: absolute;
@@ -45,7 +32,6 @@
 }
 
 .excerpt {
-  display: none;
   @nest & p {
     margin: 0.5em 0;
   }
