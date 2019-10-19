@@ -15,6 +15,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
+        projectId: 'lihiizdb',
+        dataset: 'production',
         ...clientConfig.sanity,
         token,
         watchMode: !isProd,
