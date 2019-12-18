@@ -14,7 +14,7 @@
   display: flex;
 
   @media (--media-min-small) {
-    padding: 1.5em 1.5em;
+    padding: 1em 1.5em .3em 1.5em;
   }
 }
 
@@ -111,4 +111,7 @@
 
 .showNav {
   display: block;
+}
+.infoIcon {
+  margin-top: 1em;
 }

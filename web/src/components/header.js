@@ -5,7 +5,7 @@ import {cn} from '../lib/helpers'
 
 import styles from './header.module.css'
 import logo from '../images/logo.svg'
-// import { info-outline } from 'react-icons/md'
+import infoIcon from '../images/ui/info.svg'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
@@ -23,7 +23,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link to='/archive/'><info-outline />?</Link>
+<Link to='/archive/'><img className={styles.infoIcon} src={infoIcon} alt='about' /></Link>
           </li>
         </ul>
       </nav>
