@@ -6,6 +6,15 @@ import {cn} from '../lib/helpers'
 import styles from './header.module.css'
 import logo from '../images/logo.svg'
 import infoIcon from '../images/ui/info.svg'
+import WebFont from 'webfontloader'
+import fonts from '../styles/fonts.css'
+
+WebFont.load = {
+  custom: {
+    families: ['Travaille'],
+    urls: [{fonts}]
+  }
+}
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
@@ -23,7 +32,10 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-<Link to='/archive/'><img className={styles.infoIcon} src={infoIcon} alt='about' /></Link>
+            <Link to='/archive/'><img className={styles.infoIcon} src={infoIcon} alt='about' /></Link>
+          </li>
+          <li>
+            <Link to='/archive/' className={fonts.root}>ABOUT</Link>
           </li>
         </ul>
       </nav>

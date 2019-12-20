@@ -28,6 +28,7 @@
     "end-of-stream": "^1.4.4",
     "follow-redirects": "^1.9.0",
     "fs-extra": "^8.1.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-sanity": "^5.0.4",
     "graceful-fs": "^4.2.3",
     "is-buffer": "^2.0.4",
@@ -45,6 +46,7 @@
     "tslib": "^1.10.0",
     "universalify": "^0.1.2",
     "url-parse": "^1.4.7",
+    "webfontloader": "^1.6.28",
     "wrappy": "^1.0.2"
   }
 }

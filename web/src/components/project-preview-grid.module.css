@@ -12,6 +12,12 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 2rem 0;
+  text-decoration: none;
+  @media (hover: hover) {
+    @nest &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .grid {
