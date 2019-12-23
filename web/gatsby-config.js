@@ -22,6 +22,15 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd && token
       }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+        families: ['Travaille'],
+        urls: ['static/fonts.css']
+        }
+      }
     }
   ]
 }
