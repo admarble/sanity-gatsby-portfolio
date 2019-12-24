@@ -20,7 +20,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to='/'>
+        <Link to='/'className={styles.center}>
           <img className={styles.myLogoWeb} src={logo} alt={siteTitle} />
         </Link>
       </div>
@@ -33,9 +33,6 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
         <ul>
           <li>
             <Link to='/archive/'><img className={styles.infoIcon} src={infoIcon} alt='about' /></Link>
-          </li>
-          <li>
-            <Link to='/archive/'>ABOUT</Link>
           </li>
         </ul>
       </nav>
