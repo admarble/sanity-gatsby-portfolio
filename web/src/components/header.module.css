@@ -12,7 +12,8 @@
   /* max-width: 960px; */
   padding: 1em;
   display: flex;
-
+  position: relative;
+  height: 7em;
   @media (--media-min-small) {
     padding: 1em 1.5em .3em 1.5em;
   }
@@ -24,6 +25,10 @@
   align-items: center;
   @nest & a {
     display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
     /* padding: 0.5em; */
     color: inherit;
     text-decoration: none;
