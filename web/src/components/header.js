@@ -20,7 +20,7 @@ import Ticker from 'react-ticker'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
-      <Ticker className={styles.ticker-scroll}>
+      <Ticker>
         {({ index }) => (
             <>
                 <h1>&nbsp;Antonio Marble Graphic Design & Direction &bull;</h1>
