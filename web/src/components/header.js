@@ -6,6 +6,8 @@ import {cn} from '../lib/helpers'
 import styles from './header.module.css'
 import logo from '../images/logo.svg'
 import infoIcon from '../images/ui/info.svg'
+import Ticker from 'react-ticker'
+
 // import WebFont from 'webfontloader'
 // import fonts from '../styles/fonts.css'
 
@@ -18,6 +20,13 @@ import infoIcon from '../images/ui/info.svg'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
+      <Ticker className={styles.ticker-scroll}>
+        {({ index }) => (
+            <>
+                <h1>Antonio Marble Graphic Design & Direction &bull;&nbsp;</h1>
+            </>
+        )}
+    </Ticker>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
         <Link to='/'className={styles.center}>
