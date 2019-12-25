@@ -5,11 +5,6 @@
   src: url("../fonts/Travaille-v4.95-Medium.woff") format("woff");
 }
 
-.ticker {
-  width: 100%;
-  display: inline-block;
-}
-
 :root {
   --font-family-sans: "Travaille", BlinkMacSystemFont, sans-serif;
 
@@ -46,25 +41,16 @@
   height: 6rem;
 }
 
-.centered {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .ticker {
-  font-size: 8px;
+  font-size: 6px;
   text-transform: uppercase;
   letter-spacing: 8px;
   background-color: #FF8F66;
+  width: 100%;
 }
-
+.ticker__element {
+  padding: 10px 0;
+}
 footer {
   background-color: #0000FF;
   color: #fff;

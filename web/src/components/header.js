@@ -23,7 +23,7 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
       <Ticker className={styles.ticker-scroll}>
         {({ index }) => (
             <>
-                <h1>Antonio Marble Graphic Design & Direction &bull;&nbsp;</h1>
+                <h1>&nbsp;Antonio Marble Graphic Design & Direction &bull;</h1>
             </>
         )}
     </Ticker>
