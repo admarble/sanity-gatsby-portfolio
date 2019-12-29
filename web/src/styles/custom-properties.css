@@ -70,6 +70,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 8px;
   background-color: #FF8F66;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   width: 100%;
   flex-shrink: 0;
   white-space: nowrap;
@@ -78,9 +80,8 @@ body {
   display: flex;
   padding: 10px 0;
   flex-shrink: 0;
-  white-space: nowrap;
 }
 footer {
-  background-color: #0000FF;
+  background-color: rgb(26, 26, 26);
   color: #fff;
 }
