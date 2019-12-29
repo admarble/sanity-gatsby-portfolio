@@ -4,19 +4,19 @@
   font-weight: normal; /* or 400 */
   src: url("../fonts/Travaille-v4.95-Medium.woff") format("woff");
 }
-@font-face{
+@font-face {
   font-family: 'Mplus';
   font-style: normal;
   font-weight: normal; /* or 400 */
   src: url("../fonts/mplus-1m/webfont/mplus-1m-regular-sub.woff") format("woff");
 }
-@font-face{
+@font-face {
   font-family: 'Mplus-bold';
   font-style: bold;
   font-weight: bold; /* or 400 */
   src: url("../fonts/mplus-1m/webfont/mplus-1m-bold-sub.woff") format("woff");
 }
-@font-face{
+@font-face {
   font-family: 'Mplus-light';
   font-style: lighter;
   font-weight: lighter; /* or 400 */
@@ -65,15 +65,20 @@ body {
 }
 
 .ticker {
+  display: flex;
   font-size: 6px;
   text-transform: uppercase;
   letter-spacing: 8px;
   background-color: #FF8F66;
   width: 100%;
-  word-wrap: ;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .ticker__element {
+  display: flex;
   padding: 10px 0;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 footer {
   background-color: #0000FF;

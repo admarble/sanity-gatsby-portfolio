@@ -8,16 +8,6 @@ import logo from '../images/logo.svg'
 import infoIcon from '../images/ui/info.svg'
 import MoveStuffAround from '../components/ticker'
 
-// import WebFont from 'webfontloader'
-// import fonts from '../styles/fonts.css'
-
-// WebFont.load = {
-//   custom: {
-//     families: ['Travaille'],
-//     urls: [{fonts}]
-//   }
-// }
-
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
     <MoveStuffAround></MoveStuffAround>
