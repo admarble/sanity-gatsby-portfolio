@@ -5,21 +5,38 @@
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
+  margin-top: 15%;
 }
-
+/* article {
+  background: #000000;
+  color: white;
+} */
+.mainContent {
+  background: #eeeeee;
+}
 .mainImage {
   position: relative;
-  background: #eee;
-  padding-bottom: calc(9 / 16 * 100%);
+  background: #eeeeee;
+  text-align: center;
+  @media (--media-min-medium) {
+    /* padding-bottom: calc(9 / 16 * 100%); */
+    /* min-height: 75vh; */
+  }
 
   @nest & img {
+    /* display: block;
     position: absolute;
     top: 10%;
-    left: 5%;
-    width: 30%;
-    height: 80%;
+    left: 5%; */
+    margin: 5%;
+    width: 90%;
+    text-align: center;
     vertical-align: top;
     object-fit: cover;
+    @media (--media-min-medium) {
+      text-align: center;
+      width: 50%;
+    }
   }
 }
 
@@ -46,6 +63,7 @@
 }
 
 .metaContent {
+  margin: 0 4rem 0 1em;
 }
 
 .publishedAt {

@@ -20,16 +20,15 @@ function Project (props) {
               <div className={styles.mainImage}>
                 <img
                   src={imageUrlFor(buildImageObj(mainImage))
-                    .height(Math.floor((16 / 16) * 1100))
                     .url()}
                   alt={mainImage.alt}
                 />
               </div>
             )}
-            <h1 className={styles.title}>{title}</h1>
-            {_rawBody && <BlockContent blocks={_rawBody || []} />}
           </div>
           <aside className={styles.metaContent}>
+            <h1 className={styles.title}>{title}</h1>
+            {_rawBody && <BlockContent blocks={_rawBody || []} />}
             {publishedAt && (
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
