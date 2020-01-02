@@ -1,7 +1,10 @@
 @import '../styles/custom-media.css';
 @import '../styles/custom-properties.css';
 
-.root {}
+.root {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
 
 .title {
   composes: responsiveTitle1 from './typography.module.css';
@@ -51,6 +54,7 @@
 }
 
 .mainContent {
+  border-right: 1px solid #000000;
   @nest & a {
     color: var(--color-accent);
 

@@ -71,8 +71,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 8px;
   background-color: #FF8F66;
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   width: 100%;
   flex-shrink: 0;
   white-space: nowrap;
@@ -83,6 +83,6 @@ body {
   flex-shrink: 0;
 }
 footer {
-  background-color: rgb(26, 26, 26);
+  background-color: #000000;
   color: #fff;
 }
