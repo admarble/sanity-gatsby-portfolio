@@ -21,6 +21,7 @@
 .branding {
   font-weight: 600;
   flex: 1;
+  justify-content: center;
   /* text-align: center; */
   align-items: center;
   @nest & a {

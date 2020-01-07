@@ -68,7 +68,7 @@ body {
 }
 
 .ticker {
-  display: flex;
+  /* display: flex; */
   font-size: 6px;
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -76,13 +76,13 @@ body {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   width: 100%;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   white-space: nowrap;
 }
 .ticker__element {
-  display: flex;
+  /* display: flex; */
   padding: 10px 0;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 footer {
   background-color: #000000;

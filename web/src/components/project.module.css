@@ -2,10 +2,13 @@
 @import '../styles/custom-properties.css';
 
 .root {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
   @media (--media-min-medium) {
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
-  }
+}
 }
 html, body {
   height: 100%;
@@ -26,12 +29,24 @@ html, body {
   background: #eeeeee;
   @media (--media-min-medium) {
     min-height: calc(var(--vh, 1vh) * 100);
+    border-right: 1px solid #000000;
   }
+  @nest & a {
+    color: var(--color-accent);
+
+    @media (hover: hover) {
+      @nest &:hover {
+        color: inherit;
+      }
+    }
+  }
+
 }
 .mainImage {
   position: relative;
   background: #eeeeee;
   text-align: center;
+  flex: 1;
   @media (--media-min-medium) {
     /* padding-bottom: calc(9 / 16 * 100%); */
     /* min-height: 75vh; */
@@ -60,21 +75,6 @@ html, body {
   grid-column-gap: 2em;
   @media (--media-min-medium) {
     grid-template-columns: 3fr 1fr;
-  }
-}
-
-.mainContent {
-  @nest & a {
-    color: var(--color-accent);
-
-    @media (hover: hover) {
-      @nest &:hover {
-        color: inherit;
-      }
-    }
-  }
-  @media (--media-min-medium) {
-    border-right: 1px solid #000000;
   }
 }
 
