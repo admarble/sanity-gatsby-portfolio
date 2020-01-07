@@ -29,6 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 body {
   font-family: "Mplus", Georgia, Times, serif;
+  margin: 0px;
+  padding: 0;
 }
 :root {
   --font-family-serif: "Mplus", Georgia, Times, serif;

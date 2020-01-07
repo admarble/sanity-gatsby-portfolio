@@ -8,6 +8,7 @@ import Container from './container'
 import RoleList from './role-list'
 
 import styles from './project.module.css'
+// import { render } from 'react-dom'
 
 function Project (props) {
   const {_rawBody, title, categories, mainImage, members, publishedAt, relatedProjects} = props

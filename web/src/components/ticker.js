@@ -11,16 +11,16 @@ const MoveStuffAround = () => {
   return (
     <PageVisibility onChange={handleVisibilityChange}>
       {pageIsVisible && (
-    <Ticker>
-      {({ index }) => (
-          <>
-              <h1>&nbsp;Antonio Marble Graphic Design & Direction &bull;</h1>
-          </>
+        <Ticker>
+          {({ index }) => (
+            <>
+              <h1>&nbsp;Antonio Marble Graphic Design &amp; Direction &bull;</h1>
+            </>
+          )}
+        </Ticker>
       )}
-  </Ticker>
-   )}
-   </PageVisibility>
- )
+    </PageVisibility>
+  )
 }
 
 export default MoveStuffAround
