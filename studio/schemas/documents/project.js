@@ -64,6 +64,20 @@ export default {
       type: 'projectPortableText'
     },
     {
+      name: 'projectDetail',
+      title: 'Project Detail',
+      type: 'projectPortableText'
+    },
+    {
+      name: 'projectFocus',
+      title: 'Project Focus',
+      type: 'array',
+      of: [
+        {type: 'block'},
+        {type: 'figure'}
+      ]
+    },
+    {
       name: 'relatedProjects',
       title: 'Related projects',
       type: 'array',

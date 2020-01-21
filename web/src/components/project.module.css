@@ -2,9 +2,9 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  height: 100%;
+  align-items: stretch; */
   @media (--media-min-medium) {
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
@@ -28,7 +28,7 @@ html, body {
 .mainContent {
   background: #eeeeee;
   @media (--media-min-medium) {
-    min-height: calc(var(--vh, 1vh) * 100);
+    /* min-height: calc(var(--vh, 1vh) * 100); */
     border-right: 1px solid #000000;
   }
   @nest & a {
@@ -42,11 +42,10 @@ html, body {
   }
 
 }
-.mainImage {
-  position: relative;
+.mainImage, .projectFocus {
   background: #eeeeee;
-  text-align: center;
-  flex: 1;
+  /* flex: 1; */
+  padding: 5%;
   @media (--media-min-medium) {
     /* padding-bottom: calc(9 / 16 * 100%); */
     /* min-height: 75vh; */
@@ -57,9 +56,11 @@ html, body {
     position: absolute;
     top: 10%;
     left: 5%; */
-    margin: 5%;
+    /* margin: 5%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
-    text-align: center;
     vertical-align: top;
     object-fit: cover;
     @media (--media-min-medium) {
@@ -74,11 +75,10 @@ html, body {
   grid-template-columns: 1fr;
   grid-column-gap: 2em;
   @media (--media-min-medium) {
-    grid-template-columns: 3fr 1fr;
-  }
+    grid-template-columns: 3fr 1fr; }
 }
 
-.metaContent {
+.projectInfo {
   margin: 0 4rem 0 1em;
 }
 

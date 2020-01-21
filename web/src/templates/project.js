@@ -48,6 +48,7 @@ export const query = graphql`
       slug {
         current
       }
+      _rawProjectFocus(resolveReferences: {maxDepth: 10})
       _rawBody
       members {
         _key

@@ -6,12 +6,32 @@ import {imageUrlFor} from '../lib/image-url'
 import BlockContent from './block-content'
 import Container from './container'
 import RoleList from './role-list'
+import PortableText from '@sanity/block-content-to-react'
+import urlBuilder from '@sanity/image-url'
 
 import styles from './project.module.css'
 // import { render } from 'react-dom'
 
+const urlFor = source =>
+  urlBuilder({projectId: 'lihiizdb', dataset: 'production'}).image(source)
+
+const serializer = {
+  types: {
+    figure: props => (<figure>
+      <img
+        src={urlFor(props.node.asset)
+          // .width(200)
+          .url()}
+        alt={props.node.alt}
+      />
+      <figcaption>{props.node.caption}</figcaption>
+      {/* {JSON.stringify(props, null, 2)} */}
+    </figure>)
+  }
+}
+
 function Project (props) {
-  const {_rawBody, title, categories, mainImage, members, publishedAt, relatedProjects} = props
+  const {_rawBody, title, categories, mainImage, members, publishedAt, _rawProjectFocus, relatedProjects} = props
   return (
     <article className={styles.root}>
       <Container>
@@ -26,15 +46,18 @@ function Project (props) {
                 />
               </div>
             )}
+            <div className={styles.projectFocus}>
+              <PortableText blocks={_rawProjectFocus} serializers={serializer} />
+            </div>
           </div>
-          <aside className={styles.metaContent}>
+          <div className={styles.projectInfo}>
             <h1 className={styles.title}>{title}</h1>
             {_rawBody && <BlockContent blocks={_rawBody || []} />}
             {publishedAt && (
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? distanceInWords(new Date(publishedAt), new Date())
-                  : format(new Date(publishedAt), 'MMMM Do YYYY')}
+                  : format(new Date(publishedAt), 'YYYY')}
               </div>
             )}
             {members && members.length > 0 && <RoleList items={members} title='Project members' />}
@@ -64,7 +87,7 @@ function Project (props) {
                 </ul>
               </div>
             )}
-          </aside>
+          </div>
         </div>
       </Container>
     </article>
