@@ -27,6 +27,7 @@ html, body {
 } */
 .mainContent {
   background: #eeeeee;
+  padding: 5%;
   @media (--media-min-medium) {
     /* min-height: calc(var(--vh, 1vh) * 100); */
     border-right: 1px solid #000000;
@@ -42,15 +43,37 @@ html, body {
   }
 
 }
+.projectFocus p {
+  margin: 0 5%;
+  padding: 3em 0;
+  @media (--media-min-medium) {
+    padding: 3em 0;
+  }
+}
+.projectFocus figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: top;
+  object-fit: cover;
+  @media (--media-min-medium) {
+    text-align: center;
+    width: 100%;
+  }
+}
+.projectFocus figcaption {
+  margin: 5%;
+  @media (--media-min-medium) {
+    margin: 5% 0;
+  }
+}
 .mainImage, .projectFocus {
   background: #eeeeee;
   /* flex: 1; */
-  padding: 5%;
   @media (--media-min-medium) {
     /* padding-bottom: calc(9 / 16 * 100%); */
     /* min-height: 75vh; */
   }
-
   @nest & img {
     /* display: block;
     position: absolute;
@@ -79,7 +102,10 @@ html, body {
 }
 
 .projectInfo {
-  margin: 0 4rem 0 1em;
+  margin: 0 5%;
+  @media (--media-min-medium) {
+    margin: 0 4rem 0 1em;
+  }
 }
 
 .publishedAt {
