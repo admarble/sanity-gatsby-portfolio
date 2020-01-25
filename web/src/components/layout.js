@@ -3,6 +3,7 @@ import Header from './header'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
+import Clock from 'react-live-clock';
 
 const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
   <>
@@ -11,9 +12,10 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
-          © {new Date().getFullYear()}, Built with <a href='https://www.sanity.io'>Sanity</a> &amp;
-          {` `}
-          <a href='https://www.gatsbyjs.org'>Gatsby</a>
+          <p>© {new Date().getFullYear()}, Antonio Marble</p>
+        </div>
+        <div className={styles.clock}>
+          <Clock format="HH:mm:ss" ticking={true} interval={1000} />
         </div>
       </div>
     </footer>
