@@ -21,7 +21,10 @@ const serializer = {
       <img
         src={urlFor(props.node.asset)
           // .width(200)
+          .auto('format')
+          .maxWidth(1080)
           .url()}
+        fluid={'true'}
         alt={props.node.alt}
       />
       <figcaption>{props.node.caption}</figcaption>
@@ -41,7 +44,7 @@ function Project (props) {
               <div className={styles.mainImage}>
                 <img
                   src={imageUrlFor(buildImageObj(mainImage))
-                    .url()}
+                    .maxWidth(1080).url()}
                   alt={mainImage.alt}
                 />
               </div>

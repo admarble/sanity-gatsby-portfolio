@@ -103,6 +103,7 @@ html, body {
 
 .projectInfo {
   margin: 0 5%;
+  padding: 0 5%;
   @media (--media-min-medium) {
     margin: 0 4rem 0 1em;
   }
