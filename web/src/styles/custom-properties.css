@@ -132,9 +132,3 @@ footer {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-.footerWrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  @media (--media-min-medium) {
-    grid-template-columns: 6fr 6fr; }
-}
