@@ -23,8 +23,8 @@ const serializer = {
           // .width(200)
           .auto('format')
           .maxWidth(1080)
-          .url()}
-        fluid={'true'}
+          .url()
+        }
         alt={props.node.alt}
       />
       <figcaption>{props.node.caption}</figcaption>

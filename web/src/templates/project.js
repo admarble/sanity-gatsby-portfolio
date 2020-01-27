@@ -23,31 +23,40 @@ export const query = graphql`
         }
       }
       mainImage {
-        crop {
-          _key
-          _type
-          top
-          bottom
-          left
-          right
-        }
-        hotspot {
-          _key
-          _type
-          x
-          y
-          height
-          width
-        }
         asset {
           _id
           metadata {
             lqip
+            palette {
+              _key
+              _type
+              dominant {
+                _key
+                _type
+                background
+                foreground
+                population
+                title
+              }
+            }
           }
+          fluid(maxHeight: 1080) {
+            base64
+            srcWebp
+            srcSetWebp
+          }
+        }
+        hotspot {
+          _key
+          _type
+          height
+          width
+          x
+          y
         }
         alt
       }
-      title
+    title
       slug {
         current
       }

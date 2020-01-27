@@ -28,14 +28,16 @@
   background: #eee;
   padding: 40% 0;
   margin: 20%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @nest & img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    /* object-fit: cover; */
   }
 }
 

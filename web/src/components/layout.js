@@ -3,7 +3,7 @@ import Header from './header'
 
 import '../styles/layout.css'
 import styles from './layout.module.css'
-import Clock from 'react-live-clock';
+import Clock from 'react-live-clock'
 
 const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
   <>
@@ -15,7 +15,7 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
           <p>© {new Date().getFullYear()}, Antonio Marble</p>
         </div>
         <div className={styles.clock}>
-          <Clock format="HH:mm:ss" ticking={true} interval={1000} />
+          <Clock format='HH:mm:ss' ticking interval={1000} />
         </div>
       </div>
     </footer>
