@@ -14,7 +14,7 @@ const MoveStuffAround = () => {
         <Ticker>
           {({ index }) => (
             <>
-              <h1 style={{ whiteSpace: "nowrap" }}>&nbsp;Antonio Marble Graphic Design &amp; Direction &bull;</h1>
+              <h1 style={{ whiteSpace: "nowrap" }}>Antonio Marble Graphic Design &amp; Direction &bull; </h1>
             </>
           )}
         </Ticker>

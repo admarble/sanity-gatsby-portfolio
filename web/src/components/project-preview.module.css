@@ -6,8 +6,6 @@
   margin:0 -1px -1px 0; */
   height: 100%;
   background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
   @nest &:hover {
     background-color: #0000FF;
     color: #ffffff;
@@ -22,6 +20,7 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 6px;
+  align-self: center;
 }
 
 .leadMediaThumb {
@@ -30,15 +29,18 @@
   background: #eee;
   /* padding: 50% 0; */
   margin: 20% 20% 12% 20%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   @nest & img {
     /* position: absolute;
     top: 0;
     left: 0; */
     width: 100%;
     height: auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
     /* object-fit: cover; */
   }
 }
