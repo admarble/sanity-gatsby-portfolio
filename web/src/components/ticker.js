@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Ticker from 'react-ticker'
 import PageVisibility from 'react-page-visibility'
 
@@ -12,9 +12,9 @@ const MoveStuffAround = () => {
     <PageVisibility onChange={handleVisibilityChange}>
       {pageIsVisible && (
         <Ticker>
-          {({ index }) => (
+          {({index}) => (
             <>
-              <h1 style={{ whiteSpace: "nowrap" }}>Antonio Marble Graphic Design &amp; Direction &bull; </h1>
+              <h1 style={{whiteSpace: 'nowrap'}}>Antonio Marble Graphic Design &amp; Direction &bull; </h1>
             </>
           )}
         </Ticker>
