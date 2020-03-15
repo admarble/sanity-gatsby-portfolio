@@ -1,3 +1,6 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
 * {
   box-sizing: border-box;
 }
@@ -24,7 +27,7 @@
     transform: translate3d(-100%, 0, 0);
   }
 }
-.ticker-wrap {
+.tickerWrap {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -34,7 +37,7 @@
   padding-left: 100%;
   box-sizing: content-box;
 }
-.ticker-wrap .ticker {
+.tickerWrap .ticker {
   display: inline-block;
   height: 4rem;
   line-height: 4rem;
@@ -50,7 +53,7 @@
   -webkit-animation-duration: 30s;
   animation-duration: 30s;
 }
-.ticker-wrap .ticker__item {
+.tickerWrap .tickerItem {
   display: inline-block;
   padding: 0 2rem;
   font-size: 2rem;

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './scrollingTicker.module.css'
+import styles from './scrolling-ticker.module.css'
 
 const scrollingTicker =
   <div className={styles.tickerWrap}>
