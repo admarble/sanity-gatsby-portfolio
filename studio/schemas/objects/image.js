@@ -50,19 +50,19 @@ const Image = props => {
   const aspectRatio = aspect || orgWidth / orgHeight || null
   const defaultSrcSetParts = aspectRatio
     ? widths.map(
-        sourceW =>
-          `${ImageUrlBuilder(image)
-            .width(sourceW)
-            .height(Math.round(sourceW / aspectRatio))
-            .fit(fit)
-            .url()} ${sourceW}w`
-      )
+      sourceW =>
+        `${ImageUrlBuilder(image)
+          .width(sourceW)
+          .height(Math.round(sourceW / aspectRatio))
+          .fit(fit)
+          .url()} ${sourceW}w`
+    )
     : widths.map(
-        sourceW =>
-          `${ImageUrlBuilder(image)
-            .width(sourceW)
-            .url()} ${sourceW}w`
-      )
+      sourceW =>
+        `${ImageUrlBuilder(image)
+          .width(sourceW)
+          .url()} ${sourceW}w`
+    )
 
   const defaultSrcSet = defaultSrcSetParts.join(',')
 
@@ -89,7 +89,7 @@ const Image = props => {
         ref={inViewRef}
         className={css.lqip}
         data-is-loaded={isLoaded}
-        aria-hidden="true"
+        aria-hidden='true'
         style={{
           backgroundColor: bg,
           backgroundImage: lqip && `url(${lqip})`
