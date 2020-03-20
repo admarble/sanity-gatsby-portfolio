@@ -46,7 +46,7 @@ export const query = graphql`
             asset {
               _id
             }
-            alt
+            # alt
           }
           title
           _rawExcerpt

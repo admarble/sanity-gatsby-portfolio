@@ -54,7 +54,7 @@ export const query = graphql`
           x
           y
         }
-        alt
+        # alt
       }
     title
       slug {

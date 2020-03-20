@@ -28,14 +28,14 @@
   }
 }
 .tickerWrap {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   overflow: hidden;
   height: 4rem;
-  background-color: rgba(0, 0, 0, 0.9);
   padding-left: 100%;
   box-sizing: content-box;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-color: #FF8F66;
 }
 .tickerWrap .ticker {
   display: inline-block;
@@ -56,8 +56,10 @@
 .tickerWrap .tickerItem {
   display: inline-block;
   padding: 0 2rem;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  background-color: #FF8F66;
 }
 
 body {

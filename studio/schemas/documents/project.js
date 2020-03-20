@@ -50,7 +50,7 @@ export default {
     {
       name: 'mainImage',
       title: 'Main image',
-      type: 'image'
+      type: 'figure'
     },
     {
       name: 'categories',
@@ -74,7 +74,7 @@ export default {
       type: 'array',
       of: [
         {type: 'block'},
-        {type: 'image'}
+        {type: 'figure'}
       ]
     },
     {

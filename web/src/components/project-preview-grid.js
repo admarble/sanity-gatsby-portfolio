@@ -1,4 +1,4 @@
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 import React from 'react'
 import ProjectPreview from './project-preview'
 
@@ -27,7 +27,7 @@ function ProjectPreviewGrid (props) {
 
 ProjectPreviewGrid.defaultProps = {
   title: '',
-  nodes: [],
+  nodes: []
   // browseMoreHref: ''
 }
 

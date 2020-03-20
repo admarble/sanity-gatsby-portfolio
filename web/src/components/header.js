@@ -6,11 +6,13 @@ import {cn} from '../lib/helpers'
 import styles from './header.module.css'
 import logo from '../images/logo.svg'
 import infoIcon from '../images/ui/info.svg'
+// import MarqueeSlide from './marquee'
 import MoveStuffAround from '../components/ticker'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
   <div className={styles.root}>
-    <MoveStuffAround></MoveStuffAround>
+    <MoveStuffAround />
+    {/* <MarqueeSlide /> */}
     <div className={styles.wrapper}>
       <div className={styles.branding}>
         <Link to='/'className={styles.center}>
