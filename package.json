@@ -23,7 +23,7 @@
     "@sanity/image-url": "^0.140.17",
     "@sanity/mutator": "^1.149.0",
     "@types/url-parse": "^1.4.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "debug": "^4.1.1",
     "diff-match-patch": "^1.0.4",
     "end-of-stream": "^1.4.4",
